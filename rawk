@@ -112,7 +112,7 @@ rawk_main () {
         *.[Mm][Dd])
             o="${o%.??}.html"
             if [ "$i" -nt "$o" ]; then
-                rawk_page "$i" > "$o"
+                rawk_page "./$i" > "$o"
             fi
             ;;
         *)
